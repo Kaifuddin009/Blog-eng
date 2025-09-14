@@ -1,12 +1,50 @@
-# React + Vite
+# 📝 Blogging Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **production-ready blogging platform** built with **Node.js, Express.js, MongoDB, and JWT Authentication**.  
+This application provides a system with role-based access control, allowing admins to manage blogs and moderate comments efficiently.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔐 **Authentication & Authorization**  
+  - JWT-based auth with refresh tokens  
+  - Role-based access: `superadmin` 
+  - Secure password hashing (bcrypt)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📰 **Blog Management**  
+  - Create, update, delete blogs  
+  - publish support  
+  - Recent blogs fetch  
+
+- 💬 **Comment System**  
+  - Add, approve, and delete comments  
+  - Moderation support with admin approval  
+
+- ⚡ **Architecture**  
+  - Scalable folder structure (controllers, routes, models, middlewares)  
+  - Centralized error handling  
+  - Environment-based config management  
+
+- ☁️ **Deployment**  
+  - Optimized for serverless deployment on **Vercel**  
+  - `.env` based configuration  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Runtime:** Node.js (ESM modules)  
+- **Framework:** Express.js  
+- **Database:** MongoDB (Mongoose ODM)  
+- **Auth & Security:** JWT, bcrypt, CORS  
+- **Deployment:** Vercel (Serverless Functions)  
+
+---
+
+### Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Kaifuddin009/Blog-eng.git
+   cd zap
