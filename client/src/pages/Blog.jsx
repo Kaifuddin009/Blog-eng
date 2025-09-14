@@ -92,7 +92,7 @@ if (axios.defaults.headers.common['Authorization']) {
         <p className='text-primary py-4 font-medium'>Published On {Moment(data.createdAt).format('MMM Do YYYY')}</p>
         <h1 className='text-2xl sm:text-5xl font-semibold max-w-2xl mx-auto text-gray-800'>{data.title}</h1>
         <h2 className='my-5 max-w-lg trucate mx-auto'>{data.subTitle}</h2>
-        <p className='inline-block py-1 px-4 rounded-full mb-6 border text-sm border-primary/35 bg-primary/5 font-medium text-primary'>John Doe</p>
+        <p className='inline-block py-1 px-4 rounded-full mb-6 border text-sm border-primary/35 bg-primary/5 font-medium text-primary'>Sheikh Kaifuddin</p>
       </div>
 
       <div className='max-5 max-w-5xl md:mx-auto my-10 m-4 '>

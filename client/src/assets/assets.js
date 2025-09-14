@@ -245,15 +245,19 @@ export const dashboard_data = {
 
 export const footer_data = [
       {
-          title: "Quick Links",
-          links: ["Home", "Best Sellers", "Offers & Deals", "Contact Us", "FAQs"]
-      },
-      {
-          title: "Need Help?",
-          links: ["Delivery Information", "Return & Refund Policy", "Payment Methods", "Track your Order", "Contact Us"]
+          title: "Contact Us",
+         links: [
+            {name:"+91 7024651111", url:"tel:+917024651111"} ,
+            {name:"uddinkaif00@gmail.com", url:"mailto:uddinkaif00@gmail.com"},
+            {name:"Indrapuri, Bhopal",url:"https://www.google.com/maps?q=Indrapuri,+Bhopal"}
+        ]
       },
       {
           title: "Follow Us",
-          links: ["Instagram", "Twitter", "Facebook", "YouTube"]
+          links: [
+            {name:"Instagram", url:"https://www.instagram.com/"}, 
+            {name:"XTwitter", url:"https://x.com/" },
+            {name:"LinkedIn", url:"https://www.linkedin.com/in/sheikh-kaifuddin"}
+        ]
       }
   ];

@@ -10,7 +10,7 @@ const Home = () => {
         <Navbar />
         <Header />
         <Bloglist />
-        <Newsletter/>
+        {/* <Newsletter/>*/}
         <Footer/>
     </div>
   )

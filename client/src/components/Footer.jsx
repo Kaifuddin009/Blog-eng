@@ -5,19 +5,22 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-start justify-between gap-10 py-10 border-b border-gray-500/30 text-gray-500">
 <div>
             <img src={assets.logo} alt="logo" className="w-32 sm:w-44" />
-            <p className="max-w-[410px] mt-6">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat, explicabo tenetur enim fugit iusto voluptatum, amet optio officiis.
+            <p className="max-w-[690px] mt-6 ">
+                This blog is a space where I share thoughts, experiences, and ideas on technology, creativity, and personal growth. My goal is to provide valuable insights, inspire learning, and connect with curious minds.
             </p>
         </div>
 
-        <div className="flex flex-wrap justify-between w-full md:w-[45%] gap-5 ">
+        <div className="flex flex-wrap justify-end w-full md:w-[45%] gap-25 ">
         {footer_data.map((section, index) =>(
             <div key={index}>
-                <h3 className="font-semibold text-base text-gray-900 md:mb-5 mb-2">{section.title}</h3>
-                <ul className="text-sm space-y-1">
+                <h3 className="font-semibold text-xl text-gray-900 md:mb-5 mb-2">{section.title}</h3>
+                <ul className="text-md space-y-1">
                     {section.links.map((link, i) => (
                         <li key={i}>
-                            <a href="#" className="hover:underline transition">{link}</a>
+                            <a href={link.url} 
+                            target={link.url.startsWith("http") ? "_blank" : "_self"} 
+                             rel={link.url.startsWith("http") ? "noopener noreferrer" : ""}
+                            className="hover:underline transition">{link.name}</a>
                         </li>
                     ))}
                 </ul>
